@@ -9,7 +9,6 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "request": "^2.65.0",
-    "restify": "^4.0.3"
+    "request": "2.65.0"
   }
 }
