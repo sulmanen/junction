@@ -1,0 +1,15 @@
+{
+  "name": "thinglink-junction",
+  "version": "0.0.1",
+  "description": "thinglink examples for junction",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "request": "^2.65.0",
+    "restify": "^4.0.3"
+  }
+}
