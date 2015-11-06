@@ -17,9 +17,9 @@ var formData = {
 
 console.log('Get auth token... ' + JSON.stringify(formData));
 
-request.post({url:'https://www.thinglink.com/auth/token', formData: formData}, function optionalCallback(err, httpResponse, body) {
+request.post({ url: 'https://www.thinglink.com/auth/token', formData: formData}, function optionalCallback(err, httpResponse, body) {
   if (err) {
-    return console.error('upload failed:', err);
+    return console.error('Failed: to get token', err);
   }
   console.log('You haz token!  Server responded with:', body);
 });
