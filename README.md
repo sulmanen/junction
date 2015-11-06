@@ -23,8 +23,9 @@ through [ThingLink API](http://docs.thinglink.apiary.io/)
 * paste Client ID, Client Secret, thinglink username and password into token.js
 * `> npm install .`
 * `> node token` to get token
-  `Get auth token... {"client_secret":"3aQzLuwy4DNPsCTpZFFQbgg27izn","client_id":"719160553787883520","grant_type":"password","password":"pftvppeh","username":"sulmanen+junction@thinglink.com"}
-You haz token!  Server responded with: {"access_token":"HqagKHBHEw3THPpwMdt5m6.DhPLaVKS8AhoengZvYifXDGsZQmujJ8AcfJWUgidpXuq","token_type":"bearer","refresh_token":"AoZdHLCxf48CaVxohhoRr7Dzjno","expires_in":1209600}`
+  ```sh
+  Get auth token... {"client_secret":"3aQzLuwy4DNPsCTpZFFQbgg27izn","client_id":"719160553787883520","grant_type":"password","password":"pepsimax","username":"sulmanen+junction@thinglink.com"}
+You haz token!  Server responded with: {"access_token":"HqagKHBHEw3THPpwMdt5m6.DhPLaVKS8AhoengZvYifXDGsZQmujJ8AcfJWUgidpXuq","token_type":"bearer","refresh_token":"AoZdHLCxf48CaVxohhoRr7Dzjno","expires_in":1209600}```
 * paste access_token from terminal to upload.js
 * `> node upload`
 ```sh
