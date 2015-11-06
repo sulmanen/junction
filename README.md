@@ -21,6 +21,5 @@ through [ThingLink API](http://docs.thinglink.apiary.io/)
 * `> node upload`
 * navigate to your [user page](https://www.thinglink.com/user/me)
 * you should see your tagged and uploaded image on your account
-
-
-# Long version
+* click image, click 'Share'-button and copy paste embed code into `index.html` replacing the current code
+* `> http-server` to view created image
