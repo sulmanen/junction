@@ -1,14 +1,18 @@
 var request = require('request'),
     fs = require('fs'),
+
+    IMAGE_FILE_NAME = 'image.png',
     ACCESS_TOKEN = 'MY ACCESS TOKEN HERE',
-    formData = {
-        contentType:'image/png'
-    },
-    uploadId,
     uploadRoot = 'https://api.thinglink.com/api/upload',
+
+    formData = {
+        contentType:'image/png' //"image/jpeg", "image/png", "image/gif"
+    },
     headers = {
         'Authorization': 'Bearer ' + ACCESS_TOKEN
-    };
+    },
+    uploadId;
+
 
 
 request.post({
@@ -17,20 +21,20 @@ request.post({
     headers: headers
 }, function optionalCallback(err, httpResponse, body) {
     if (err) {
-        return console.error('upload failed:', err);
+        return console.error('Getting upload id failed:', err);
     }
 
     uploadId = JSON.parse(body).results.id;
 
     console.log(uploadId);
 
-    fs.stat('image.png', function(error, stat) {
+    fs.stat(IMAGE_FILE_NAME, function(error, stat) {
 
         headers['Content-Length'] = stat.size;
 
         console.log(stat.size);
 
-        fs.createReadStream('image.png').pipe(request.put({
+        fs.createReadStream(IMAGE_FILE_NAME).pipe(request.put({
             url: uploadRoot + '/' + uploadId,
             headers: headers
         }, function(err, response, body) {
