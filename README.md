@@ -12,7 +12,12 @@ through [ThingLink API](http://docs.thinglink.apiary.io/)
 # Short version
 * if !node install [node](https://nodejs.org/en/)
 * create [ThingLink](https://www.thinglink.com) account
-* accept TOS & get API Keys [developer pages](https://www.thinglink.com/developer) w/ `http://localhost` for Redirect url
+* go to [developer pages](https://www.thinglink.com/developer)
+  * click 'Start creating tags...'
+  * accept TOS
+  * click 'Create apps'
+  * get API Keys w/ `http://localhost` for Redirect url and pick any name
+
 * `git clone https://github.com/sulmanen/junction.git`
 * paste Client ID, Client Secret, thinglink username and password into token.js
 * `> npm install .`

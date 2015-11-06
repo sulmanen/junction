@@ -70,6 +70,7 @@ request.post({
                         },
                         {
                             "description":"Thing #2",
+                            "picture":response.headers['location'],
                             "box":{
                                 "y1":1.0,
                                 "y2":1.0,
