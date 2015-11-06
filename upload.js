@@ -81,7 +81,7 @@ request.post({
                     ],
                     "title":"Wolverine",
                     "visibility":"public",
-                    "url": response.headers['location']
+                     "url": response.headers['location']
                 })
             })
         }));
