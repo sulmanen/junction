@@ -9,7 +9,11 @@ Demo of
 
 through [ThingLink API](http://docs.thinglink.apiary.io/)
 
-# Short version
+# Get started
+ThingLink API allows you to upload images, place things on the image with x y coordinates which have content according to url.
+
+With these instructions you will end up with a tagged image in ThingLink. Complete API docs are [here](http://docs.thinglink.apiary.io/)
+
 * if !node install [node](https://nodejs.org/en/)
 * create [ThingLink](https://www.thinglink.com) account
 * request free upgrade from sulmanen (at) thinglink.com (you can complete the excercise w/o but will be useful later on)
