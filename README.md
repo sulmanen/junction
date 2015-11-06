@@ -10,7 +10,7 @@ Demo of
 through [ThingLink API](http://docs.thinglink.apiary.io/)
 
 # Short version
-
+* if !node install [node](https://nodejs.org/en/)
 * create [ThingLink](https://www.thinglink.com) account
 * accept TOS & get API Keys [developer pages](https://www.thinglink.com/developer) w/ http://localhost for Redirect url
 * `git clone https://github.com/sulmanen/junction.git`
@@ -23,3 +23,8 @@ through [ThingLink API](http://docs.thinglink.apiary.io/)
 * you should see your tagged and uploaded image on your account
 * click image, click 'Share'-button and copy paste embed code into `index.html` replacing the current code
 * `> http-server` to view created image
+
+# Some Ideas
+
+* image recognition with [openCV](http://opencv.org/) and [node-opencv](https://github.com/peterbraden/node-opencv) and autotag people or things
+*
